@@ -1,0 +1,194 @@
+/* Categories:
+    1   Discrete Structures
+    2   Programming
+    3   Algorithms and Complexity
+    4   Systems / architecture
+    5   Software Engineering
+    6   Information Management
+    7   Other, including Graphics, Human-Computer Interaction, Web, and 
+        Social / Professional Issues
+    
+TAGS:   k       Question ID, key
+        cit     attribution, citation
+        ctg     category according to list above
+        q       question text
+        aa      correct answer
+        af      incorrect answer...may be three or four per question
+        con     condition / explanation paragraph
+        fig     path to image
+        
+        
+=============================================================================*/
+k 001
+cit 180E1F06
+ctg 5
+con
+q Which of the following represents the life-cycle of software development?
+aa Analysis -> Design -> Coding -> Testing -> Operation and Maintenance
+af Design -> Analysis -> Coding -> Testing -> Operation and Maintenance
+af Design -> Analysis -> Coding -> Testing
+af Analysis -> Design -> Coding -> Operation and Maintenance
+
+k 002
+cit 180E1F06
+ctg 2
+con
+q Defining a class so that the implementation of the data and methods of the class are not known to the programmers who use the class is called:
+aa Encapsulation
+af Data Binding
+af Polymorphism
+af Inheritance
+
+k 003
+cit 180E1F06
+ctg 2
+con
+q Which of the following is an incorrect identifier?
+aa 3theValue
+af THE_IDENTIFIER
+af a_b_
+af neolithic123FOUR
+
+k 004
+cit 180E1F06
+ctg 2
+con public class Test
+    {
+        private static final int value = 5;
+        public static void main( String[] args )
+        {
+            int total, value = 4;
+            total = value + value;
+            total = total + someMethod( total );
+            System.out.println( total );
+        }
+        public static int someMethod( int val )
+        {
+        return value;
+        }
+    }
+    
+q What is printed by the code listed above?
+aa 13
+af None of these
+af 16
+af 15
+
+k005
+cit ETS Sample Test
+ctg 1
+con 
+fig \\exitExamSimulation\\ExitExamApp\\ExitExamApp\\images\\img_k005.png
+q If D is the accepting state of the nondeterministic finite automaton above, which of the following does the automoton accept?
+aa 100100
+af 001
+af 1101
+af 01100
+af 000110
+
+
+k 006
+cit ETS Sample Test
+ctg 1
+con 
+fig **********************
+q If a node in the binary search tree above is to be located by binary tree search, what is the expected number of comparisons required to locate one of the items (nodes) in the tree chosen at random?
+aa 2.75
+af 2
+af 3
+af 1.75
+af 3.25
+
+k 007
+cit ETS Sample Test
+ctg 2
+con If the variables are suitably initialized, and if i remains within appropriate bounds, then the following code implements the stack operations Push and Pop when the stack is represented as an array V[1..N] with an index variable i. Push: begin V[i]: = x; i: = i+1; end  Pop: begin i: = i -1; x: = V[i]; end
+fig 
+q Which of the following gives the correct initialization for this stack implementation?
+aa i: = 1
+af i: = 0
+af i: = N - 1
+af i: = N
+af i: = N / 2
+
+k 008
+cit ETS Sample Test
+ctg 2
+con If the variables are suitably initialized, and if i remains within appropriate bounds, then the following code implements the stack operations Push and Pop when the stack is represented as an array V[1..N] with an index variable i. Push: begin V[i]: = x; i: = i+1; end  Pop: begin i: = i -1; x: = V[i]; end
+fig 
+q If it is assumed that suitable changes in the initialization code were also made, which of the following changes to Push and Pop would yield a correct implementation of the stacks? I. Replacing the code for Push with that for Pop and vice versa II. Making Push decrement i and Pop increment i III. Reversing the order of the statements in both Push and Pop
+aa II and III only
+af I only
+af II only
+af III only
+af I and II only
+
+k 009
+cit ETS Sample Test
+ctg 4
+con In a computer with cache memory interposed between the processor and the primary memory, the cache is k-way assossiative (for some fixed k); i.e., each location in primary memory "maps to" (can be cached in) any of k locations in the cache. Let there be P locations in primary memory and C locations in the cache.
+fig 
+q On the average, how many different locations in primary memory map to a particular location in the cache if k = 2?
+aa 2P / C
+af 1
+af 2
+af P / C
+af P
+
+k 010
+cit ETS Sample Test
+ctg 1
+con I. (1 + €)(01 + 0)*  II. (01 + 10)*  III. (0 + 1)*(0 + €)
+fig 
+q Which of the following regular expressions generate(s) no string with two consecutive 1's?
+aa I only
+af II only
+af III only
+af I and II only
+af II and III only
+
+k 
+cit 
+con 
+fig 
+q 
+aa 
+af 
+af 
+af 
+af 
+
+k 
+cit 
+con 
+fig 
+q 
+aa 
+af 
+af 
+af 
+af 
+
+k 
+cit 
+con 
+fig 
+q 
+aa 
+af 
+af 
+af 
+af
+
+ 
+k********************************
+cit 180E1F06
+ctg 2
+con int theVar = // 2
+				/* /* 4 + 5 */
+				6 * 3
+				// - 2
+				;
+
+
+
