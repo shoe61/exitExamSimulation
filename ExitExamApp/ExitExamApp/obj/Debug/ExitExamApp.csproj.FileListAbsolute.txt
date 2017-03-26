@@ -28,3 +28,6 @@ F:\ExitExamApp\ExitExamApp\obj\Debug\ExitExamApp.ExamMenuForm.resources
 F:\ExitExamApp\ExitExamApp\obj\Debug\ExitExamApp.LoginForm.resources
 F:\ExitExamApp\ExitExamApp\obj\Debug\ExitExamApp.Properties.Resources.resources
 F:\ExitExamApp\ExitExamApp\obj\Debug\ExitExamApp.csproj.GenerateResource.Cache
+C:\Users\Mason\Desktop\ProjectRepo\exitExamSimulation\ExitExamApp\ExitExamApp\bin\Debug\ExitExamApp.exe.config
+C:\Users\Mason\Desktop\ProjectRepo\exitExamSimulation\ExitExamApp\ExitExamApp\obj\Debug\ExitExamApp.exe
+C:\Users\Mason\Desktop\ProjectRepo\exitExamSimulation\ExitExamApp\ExitExamApp\obj\Debug\ExitExamApp.pdb
