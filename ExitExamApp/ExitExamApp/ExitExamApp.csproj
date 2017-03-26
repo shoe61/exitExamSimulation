@@ -65,41 +65,41 @@
   <ItemGroup>
     <Compile Include="Logic\Constants.cs" />
     <Compile Include="Logic\DatabaseManager.cs" />
-    <Compile Include="ExamMenuForm.cs">
+    <Compile Include="Forms\ExamMenuForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ExamMenuForm.Designer.cs">
+    <Compile Include="Forms\ExamMenuForm.Designer.cs">
       <DependentUpon>ExamMenuForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Logic\Utilities.cs" />
-    <Compile Include="LoginForm.cs">
+    <Compile Include="Forms\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginForm.Designer.cs">
+    <Compile Include="Forms\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\Question.cs" />
     <Compile Include="Models\QuestionResponse.cs" />
-    <Compile Include="ReportForm.cs">
+    <Compile Include="Forms\ReportForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ReportForm.Designer.cs">
+    <Compile Include="Forms\ReportForm.Designer.cs">
       <DependentUpon>ReportForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Test.cs" />
-    <Compile Include="TestForm.cs">
+    <Compile Include="Forms\TestForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TestForm.Designer.cs">
+    <Compile Include="Forms\TestForm.Designer.cs">
       <DependentUpon>TestForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\User.cs" />
-    <EmbeddedResource Include="ExamMenuForm.resx">
+    <EmbeddedResource Include="Forms\ExamMenuForm.resx">
       <DependentUpon>ExamMenuForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginForm.resx">
+    <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -125,9 +125,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Forms\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">
       <Visible>False</Visible>
