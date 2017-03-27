@@ -16,7 +16,8 @@ namespace ExitExamApp
         private string incorrect1;
         private string incorrect2;
         private string incorrect3;
-        //private string hint;
+        //private string hint32
+  
 
         public Question()
         {
