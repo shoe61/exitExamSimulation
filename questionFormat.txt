@@ -255,17 +255,17 @@ af 360
 af 729
 af 1000
 
-k 
-cit 
-ctg 
+k 020
+cit ETSMFT2_10
+ctg 1
 con 
-fig 
-q 
-aa 
-af 
-af 
-af 
-af 
+fig .\\images\\img_k020.png
+q Consider the statement "Every connected graph has one or more vertices of degree 2." Which of the five graphs above is a counterexample to that statement?
+aa C
+af A
+af B
+af D
+af E
 
 k 
 cit 
