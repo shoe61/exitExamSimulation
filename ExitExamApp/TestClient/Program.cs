@@ -28,7 +28,9 @@ namespace TestClient
             Console.WriteLine("1. Select Users");
             Console.WriteLine("2. Insert User");
             Console.WriteLine("3. Delete User");
-            Console.WriteLine("4. Exit");
+            Console.WriteLine("4. Validate User");
+            Console.WriteLine("5. Get User");
+            Console.WriteLine("6. Exit");
 
             try
             {
@@ -47,6 +49,12 @@ namespace TestClient
                         DeleteUserTest();
                         break;
                     case 4:
+                        ValidateUserTest();
+                        break;
+                    case 5:
+                        GetUserTest();
+                        break;
+                    case 6:
                         Environment.Exit(0);
                         break;
                 }
@@ -86,7 +94,7 @@ namespace TestClient
                 Console.WriteLine(output);
             }
 
-            Console.WriteLine("User Entered. Press Enter to Continue");
+            Console.WriteLine("Press Enter to Continue.");
             Console.ReadLine();
             Console.Clear();
         }
@@ -140,6 +148,8 @@ namespace TestClient
             catch(Exception ex)
             {
                 Console.WriteLine(ex.Message);
+                Console.ReadLine();
+                Console.Clear();
             }
 
         }
@@ -167,6 +177,8 @@ namespace TestClient
                     else
                     {
                         Console.WriteLine("Error Deleting User");
+                        Console.ReadLine();
+                        Console.Clear();
                     }
                 }
                 catch (Exception ex)
@@ -179,6 +191,72 @@ namespace TestClient
                 Console.WriteLine("Press Enter to return to the Main Menu.");
                 Console.ReadLine();
                 Console.Clear();
+            }
+        }
+
+        public static void ValidateUserTest()
+        {
+            String username = "";
+            String password = "";
+            DatabaseManager db = new DatabaseManager();
+
+            Console.WriteLine("**********************************************************************************");
+            Console.WriteLine("VALIDATE USER TEST");
+            Console.WriteLine("**********************************************************************************");
+            Console.WriteLine("Username: ");
+            username = Console.ReadLine();
+            Console.WriteLine("Password: ");
+            password = Console.ReadLine();
+
+            User user = db.ValidateUser(username, password);
+
+            if (user == null)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Invalid Username or Password");
+            }
+            else
+            {
+                Console.WriteLine(String.Format("USER VALIDATED: {0}", user.FirstName + " " + user.LastName));
+            }
+
+            Console.WriteLine("Press Enter to return to the menu.");
+            Console.ReadLine();
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Green;
+        }
+
+        public static void GetUserTest()
+        {
+            Console.WriteLine("**********************************************************************************");
+            Console.WriteLine("GET USER TEST");
+            Console.WriteLine("**********************************************************************************");
+            Console.WriteLine("Enter a UserID: ");
+            int userID = Int32.Parse(Console.ReadLine());
+            DatabaseManager db = new DatabaseManager();
+            User user = db.GetUser(userID);
+
+            if (user != null)
+            {
+                Console.WriteLine(String.Format("UserID: {0}", user.UserID));
+                Console.WriteLine(String.Format("First Name: {0}", user.FirstName));
+                Console.WriteLine(String.Format("Last Name: {0}", user.LastName));
+                Console.WriteLine(String.Format("Username: {0}", user.UserName));
+                Console.WriteLine(String.Format("Password: {0}", user.PassWord));
+                Console.WriteLine(String.Format("User Type: {0}", user.UserType));
+
+                Console.WriteLine("Press Enter to return to the menu.");
+                Console.ReadLine();
+                Console.Clear();
+            }
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Invalid UserID.");
+                Console.WriteLine("Press Enter to return to the menu.");
+                Console.ReadLine();
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Green;
             }
         }
     }

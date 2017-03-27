@@ -33,6 +33,7 @@ namespace ExitExamApp
             }
             set 
             {
+                //Ensures that the value is positive
                 if (value > 0)
                 {
                     _userID = value;
@@ -52,7 +53,15 @@ namespace ExitExamApp
             }
             set
             {
-                _firstName = value;
+                //Ensures that the value is not too long to be stored in the database.
+                if (value.Length <= Logic.Constants.USER_FIRSTNAME_LENGTH)
+                {
+                    _firstName = value;
+                }
+                else
+                {
+                    throw new Exception("First Name input too large."); 
+                }
             }
         }
 
@@ -64,31 +73,15 @@ namespace ExitExamApp
             }
             set
             {
-                _lastName = value;
-            }
-        }
-
-        public String PassWord
-        {
-            get
-            {
-                return _passWord;
-            }
-            set
-            {
-                _passWord = value;
-            }
-        }
-
-        public Char UserType
-        {
-            get
-            {
-                return _userType;
-            }
-            set
-            {
-                _userType = value;
+                //Ensures that the value is not too long to be stored in the database.
+                if (value.Length <= Logic.Constants.USER_LASTNAME_LENGTH)
+                {
+                    _lastName = value;
+                }
+                else
+                {
+                    throw new Exception("Last Name input too large.");
+                }
             }
         }
 
@@ -100,12 +93,56 @@ namespace ExitExamApp
             }
             set
             {
-                _userName = value;
+                //Ensures that the value is not too long to be stored in the database.
+                if (value.Length <= Logic.Constants.USER_USERNAME_LENGTH)
+                {
+                    _userName = value;
+                }
+                else
+                {
+                    throw new Exception("Username input too large.");
+                }
+            }
+        }
+
+        public String PassWord
+        {
+            get
+            {
+                return _passWord;
+            }
+            set
+            {
+                //Ensures that the value is not too long to be stored in the database.
+                if (value.Length <= Logic.Constants.USER_PASSWORD_LENGTH)
+                {
+                    _passWord = value;
+                }
+                else
+                {
+                    throw new Exception("Password input too large");
+                }
+            }
+        }
+
+        public Char UserType
+        {
+            get
+            {
+                return _userType;
+            }
+            set
+            {
+                //Ensures that a valid user type is assigned.
+                if (Logic.Constants.USER_USERTYPES.Contains(value))
+                {
+                    _userType = value;
+                }
+                else
+                {
+                    throw new Exception(String.Format("{0} is not a valid user type.", value));
+                }
             }
         }
     }
-
-    
-
-
 }

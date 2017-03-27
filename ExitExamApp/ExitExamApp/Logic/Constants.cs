@@ -8,10 +8,10 @@ namespace ExitExamApp.Logic
 {
     class Constants
     {
-        public const int User_FirstName_Length = 30;
-        public const int User_LastName_Length = 30;
-        public const int User_UserName_Length = 30;
-        public const int User_PassWord_Length = 30;
-        public readonly char[] User_UserTypes = "AS".ToCharArray();
+        public const int USER_FIRSTNAME_LENGTH = 30;
+        public const int USER_LASTNAME_LENGTH = 30;
+        public const int USER_USERNAME_LENGTH = 30;
+        public const int USER_PASSWORD_LENGTH = 30;
+        public readonly static char[] USER_USERTYPES = "AS".ToCharArray();
     }
 }
