@@ -6,3 +6,6 @@ C:\Users\Mason\Desktop\XPS\exitExamSimulation\ExitExamApp\TestClient\bin\Debug\E
 C:\Users\Mason\Desktop\XPS\exitExamSimulation\ExitExamApp\TestClient\bin\Debug\ExitExamApp.pdb
 C:\Users\Mason\Desktop\XPS\exitExamSimulation\ExitExamApp\TestClient\obj\Debug\TestClient.exe
 C:\Users\Mason\Desktop\XPS\exitExamSimulation\ExitExamApp\TestClient\obj\Debug\TestClient.pdb
+C:\exitExamSimulation\ExitExamApp\TestClient\bin\Debug\TestClient.exe.config
+C:\exitExamSimulation\ExitExamApp\TestClient\obj\Debug\TestClient.exe
+C:\exitExamSimulation\ExitExamApp\TestClient\obj\Debug\TestClient.pdb

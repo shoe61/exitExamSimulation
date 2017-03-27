@@ -20,7 +20,7 @@ TAGS:   k       Question ID, key
         
 =============================================================================*/
 k 001
-cit 180E1F06
+cit 180E1F06_1
 ctg 5
 con
 q Which of the following represents the life-cycle of software development?
@@ -30,7 +30,7 @@ af Design -> Analysis -> Coding -> Testing
 af Analysis -> Design -> Coding -> Operation and Maintenance
 
 k 002
-cit 180E1F06
+cit 180E1F06_2
 ctg 2
 con
 q Defining a class so that the implementation of the data and methods of the class are not known to the programmers who use the class is called:
@@ -40,7 +40,7 @@ af Polymorphism
 af Inheritance
 
 k 003
-cit 180E1F06
+cit 180E1F06_3
 ctg 2
 con
 q Which of the following is an incorrect identifier?
@@ -78,7 +78,7 @@ k005
 cit ETS Sample Test
 ctg 1
 con 
-fig \\exitExamSimulation\\ExitExamApp\\ExitExamApp\\images\\img_k005.png
+fig .\\images\\img_k005.png
 q If D is the accepting state of the nondeterministic finite automaton above, which of the following does the automoton accept?
 aa 100100
 af 001
@@ -91,7 +91,7 @@ k 006
 cit ETS Sample Test
 ctg 1
 con 
-fig **********************
+fig .\\images\\img_k006.png
 q If a node in the binary search tree above is to be located by binary tree search, what is the expected number of comparisons required to locate one of the items (nodes) in the tree chosen at random?
 aa 2.75
 af 2
@@ -147,8 +147,117 @@ af III only
 af I and II only
 af II and III only
 
+k 011
+cit ETS Sample Test
+ctg 2
+con 
+fig 
+q Which of the following C++ expressions does NOT always correctly compute the mathematical average of the integer variables a, b, c, and d?
+aa (a + b + c + d) / 4
+af float((a + b + c + d) / 4.0) 
+af (float(a + b + c + d)) / 4
+af (a + b + c + d) / 4.0
+af (a + float(b) + c + d) / 4
+
+k 012
+cit ETS Sample Test
+ctg 2
+con Consider the following recursive function.  int Fun( int n ) { if ( n == 4 ) return 2;  else return 2 * Fun (n + 1 ); }
+fig 
+q What is the value returned by the function call Fun ( 2 ) ?
+aa 8
+af 2
+af 16
+af 24
+af 4
+
+k 013
+cit ETS Sample Test
+ctg 2
+con If A is an array with n elements and procedure Swap exchanges its arguments, the the following code segment sorts A in descending order. // for (int j = 0; j < n - 1; j++) for (int k = 0; k < n - j - 1; k++) if ( A[k] < A[k + 1] ) Swap (A[k], A[k + 1]);
+fig 
+q How many calls to Swap are made if initially, A[i] = i, for i = 0, 1, 2,...,n-1?
+aa n(n - 1)/2
+af n - 1
+af n
+af (n - 1)(n - 2)
+af n(n - 1)
+
+k 014
+cit ETS Sample Test
+ctg 4
+con 
+fig 
+q Which of the following statements about static RAM (SRAM) and / or dynamic RAM (DRAM) is true?
+aa DRAM is less expensive than SRAM.
+af SRAM is implemented using transistors and capacitors that must be periodically refreshed.
+af DRAM has a faster access time than SRAM.
+af SRAM is capable of operating at speeds closely approximating processors.
+af DRAM is capable of operating at speeds closely approximating processors.
+
+k 015
+cit ETS Sample Test
+ctg 1
+con Suppose that {S1, S2, ..., SN} is a set of N fixed-length strings ordered alphabetically so that S1 < S2...<SN.
+fig 
+q If these strings are held, in order, in an array of N elements, the the time required to find the location of Si+1, 1 <= i <= N, has complexity of order
+aa 1
+af log N
+af N
+af N log N
+af N squared
+ 
+k 016
+cit ETS Sample Test
+ctg 4
+con Suppose that V is a vector with indices from a to b and that each element of V occupies two words.
+fig 
+q If the elements of V are stored in consecutive words of memory and @V[a] is the address of word 1 of V[a], the the address of word 1 of V[i], where a <= i <= b, is
+aa (@V[a] - 2a) + 2i
+af (@V[a] - a) + i
+af 2(@V[a] - a) + 2i
+af (@V[a] - 2a) + i
+af (@V[a] - a) + 2i
+
+k 017
+cit ETS Sample Test_13
+ctg 1
+con 
+fig 
+q If A, B, and C are Boolean variables, and if "^" and "v" denote the Boolean "and" and "or," respectively, which of the following is / are true? I. A^(B v C) = (A ^ B) v (A ^ C) II. A v (B ^ C) = (A v B) ^ (A v C)  III. (B ^ A) v C = C v (A ^ B)
+aa I, II, and III
+af II only
+af I only
+af I and III only
+af II and III only
+
+k 018
+cit ETSMFT2_1
+ctg 2
+con Consider the following pseudocode fragment, where x is an integer variable tha has been initialized. 
+fig .\\images\\img_k018.png
+q Which of the following statments is / are true at the end of the WHILE loop? I. (i == 10) or (i == x)  II. If x > 10, then i == 10.  III. If j == 6, then x == 4.
+aa I, II, and III
+af None
+af I only
+af III only
+af II and III only
+
+k 019
+cit ETSMFT2_9
+ctg 3
+con 
+fig 
+q A personal identification number (PIN) that opens a certain lock consists of a sequence of 3 DIFFERENT digits from 0 through 9, inclusive. How many possible PINs are there?
+aa 720
+af 120
+af 360
+af 729
+af 1000
+
 k 
 cit 
+ctg 
 con 
 fig 
 q 
@@ -160,6 +269,7 @@ af
 
 k 
 cit 
+ctg 
 con 
 fig 
 q 
@@ -171,6 +281,7 @@ af
 
 k 
 cit 
+ctg 
 con 
 fig 
 q 
@@ -178,8 +289,55 @@ aa
 af 
 af 
 af 
-af
+af 
 
+k 
+cit 
+ctg 
+con 
+fig 
+q 
+aa 
+af 
+af 
+af 
+af 
+
+k 
+cit 
+ctg 
+con 
+fig 
+q 
+aa 
+af 
+af 
+af 
+af 
+
+k 
+cit 
+ctg 
+con 
+fig 
+q 
+aa 
+af 
+af 
+af 
+af 
+
+k 
+cit 
+ctg 
+con 
+fig 
+q 
+aa 
+af 
+af 
+af 
+af 
  
 k********************************
 cit 180E1F06
