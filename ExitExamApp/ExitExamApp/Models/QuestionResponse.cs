@@ -8,17 +8,50 @@ namespace ExitExamApp
 {
     class QuestionResponse
     {
-        private int questionResponseID;
-        private int userID;
-        private int correct;
+        private int _questionResponseID;
+        private int _userID;
+        private int _correct;
 
-        public int getQuestionResponse() { return questionResponseID; }
-        public void setQuestionResponse(int qResponse) { questionResponseID = qResponse; }
+        public QuestionResponse()
+        {
+            _questionResponseID = 0;
+            _userID = 0;
+            _correct = 0;
+        }
+        public int QuestionResponseID
+        {
+            get
+            {
+                return _questionResponseID;
+            }
+            set
+            {
+                _questionResponseID = value;
+            }
+        }
 
-        public int getUserID() { return userID;}
-        public void setUserID(int uID) { userID = uID; }
+        public int UserID
+        {
+            get
+            {
+                return _userID;
+            }
+            set
+            {
+                _userID = value;
+            }
+        }
 
-
-
+        public int Correct
+        {
+            get
+            {
+                return _correct;
+            }
+            set
+            {
+                _correct = value;
+            }
+        }
     }
 }

@@ -9,3 +9,6 @@ C:\Users\Mason\Desktop\XPS\exitExamSimulation\ExitExamApp\TestClient\obj\Debug\T
 C:\exitExamSimulation\ExitExamApp\TestClient\bin\Debug\TestClient.exe.config
 C:\exitExamSimulation\ExitExamApp\TestClient\obj\Debug\TestClient.exe
 C:\exitExamSimulation\ExitExamApp\TestClient\obj\Debug\TestClient.pdb
+C:\Users\Joshua\Desktop\XPS\exitExamSimulation\ExitExamApp\TestClient\bin\Debug\TestClient.exe.config
+C:\Users\Joshua\Desktop\XPS\exitExamSimulation\ExitExamApp\TestClient\obj\Debug\TestClient.exe
+C:\Users\Joshua\Desktop\XPS\exitExamSimulation\ExitExamApp\TestClient\obj\Debug\TestClient.pdb
