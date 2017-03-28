@@ -9,43 +9,136 @@ namespace ExitExamApp
 {
     class Question
     {
-        private int questionID;
-        private int questionCategory;
-        private string text;
-        private string answer;
-        private string incorrect1;
-        private string incorrect2;
-        private string incorrect3;
-        //private string hint32
-  
+        private int _questionID;
+        private int _questionCategory;
+        private string _text;
+        private string _answer;
+        private string _incorrect1;
+        private string _incorrect2;
+        private string _incorrect3;
+        private string _incorrect4;
+        private string _hint;
 
         public Question()
         {
+            _questionID = 0;
+            _questionCategory = 0;
+            _text = "";
+            _answer = "";
+            _incorrect1 = "";
+            _incorrect2 = "";
+            _incorrect3 = "";
+            _incorrect4 = "";
+            _hint = "";
+        }
+
+        public int QuestionID
+        {
+            get
+            {
+                return _questionID;
+            }
+            set
+            {
+                _questionID = value;
+            }
 
         }
 
-        public int getQuestionID() { return questionID; }
-        public void setID(int id) { questionID = id; }
+        public int QuestionCategory
+        {
+            get
+            {
+                return _questionCategory;
+            }
+            set
+            {
+                _questionCategory = value;
+            }
+        }
 
-        public int getQuestionCategory() { return questionCategory; }
-        public void setQuestionCategory(int cat) { questionCategory = cat; }
+        public string Text
+        {
+            get
+            {
+                return _text;
+            }
+            set
+            {
+                _text = value;
+            }
+        }
 
-        public string getText() { return text; }
-        public void setText(string t) { text = t;  }
+        public string Answer
+        {
+            get
+            {
+                return _answer;
+            }
+            set
+            {
+                _answer = value;
+            }
+        }
 
-        public string getAnswer() { return answer; }
-        public void setAnswer(string ans) { answer = ans; }
+        public string Incorrect1
+        {
+            get
+            {
+                return _incorrect1;
+            }
+            set
+            {
+                _incorrect1 = value;
+            }
+        }
 
-        //public string getIncorrect1() { return incorrect1; }
-        //public void setIncorrect1(string ans){incorrect1 = ans;}
-        //public string getIncorrect2() { return incorrect2; }
-        //public void setIncorrect2(string ans){incorrect2 = ans;}
-        //public string getIncorrect3() { return incorrect3; }
-        //public void setIncorrect3(string ans){incorrect3 = ans;}
+        public string Incorrect2
+        {
+            get
+            {
+                return _incorrect2;
+            }
+            set
+            {
+                _incorrect2 = value;
+            }
+        }
 
-        //public string getHint() { return hint; }
-        //public void setHint(string h) { hint = h; }
+        public string Incorrect3
+        {
+            get
+            {
+                return _incorrect3;
+            }
+            set
+            {
+                _incorrect3 = value;
+            }
+        }
 
+        public string Incorrect4
+        {
+            get
+            {
+                return _incorrect4;
+            }
+            set
+            {
+                _incorrect4 = value;
+            }
+        }
 
+        public string Hint
+        {
+            get
+            {
+                return _hint;
+            }
+            set
+            {
+                _hint = value;
+            }
+        }
     }
 }

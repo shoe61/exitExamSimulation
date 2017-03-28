@@ -41,3 +41,11 @@ C:\Users\Mason\Desktop\XPS\exitExamSimulation\ExitExamApp\ExitExamApp\obj\Debug\
 C:\Users\Mason\Desktop\XPS\exitExamSimulation\ExitExamApp\ExitExamApp\obj\Debug\ExitExamApp.csproj.GenerateResource.Cache
 C:\Users\Mason\Desktop\XPS\exitExamSimulation\ExitExamApp\ExitExamApp\bin\Debug\ExitExamApp.exe
 C:\Users\Mason\Desktop\XPS\exitExamSimulation\ExitExamApp\ExitExamApp\bin\Debug\ExitExamApp.pdb
+C:\exitExamSimulation\ExitExamApp\ExitExamApp\obj\Debug\ExitExamApp.csprojResolveAssemblyReference.cache
+C:\exitExamSimulation\ExitExamApp\ExitExamApp\obj\Debug\XPSAddUserForm.AddUserForm.resources
+C:\exitExamSimulation\ExitExamApp\ExitExamApp\obj\Debug\ExitExamApp.ExamMenuForm.resources
+C:\exitExamSimulation\ExitExamApp\ExitExamApp\obj\Debug\ExitExamApp.LoginForm.resources
+C:\exitExamSimulation\ExitExamApp\ExitExamApp\obj\Debug\ExitExamApp.Properties.Resources.resources
+C:\exitExamSimulation\ExitExamApp\ExitExamApp\obj\Debug\ExitExamApp.csproj.GenerateResource.Cache
+C:\exitExamSimulation\ExitExamApp\ExitExamApp\obj\Debug\ExitExamApp.exe
+C:\exitExamSimulation\ExitExamApp\ExitExamApp\obj\Debug\ExitExamApp.pdb
